@@ -30,10 +30,7 @@ class Event extends ntdtcBase
     }
     function link()
     {
-        $link = 'javascript:;';
-        if($this->getPostMeta('event-link') <> "") {
-            $link = $this->getPostMeta('event-link');
-        }
+        $link = $this->getPostMeta('event-link');
         return $link;
     }
     function isUpcomingEvent()

@@ -523,8 +523,14 @@ function getEventsList_shortcode()
                     </div>
                     <div class="location">
                         <span class="fa fa-map-marker"></span> ' . $event->getCustomField('event-location') . '
-                    </div>
-                    <a href="' . $event->link() . '" class="btn btn-primary">reserve your place</a>
+                    </div>';
+                    if($event->link() <> "") {
+                        $html .= '<a href="' . $event->link() . '" class="btn btn-primary">reserve your place</a>';
+                    }
+                    else {
+                        $html .= '<strong>Enter on the day</strong>';
+                    }
+                    $html .= '
                 </div>
                 <div class="image-wrapper">
                     ' . $event->getFeatureImage() . '

@@ -30,8 +30,8 @@ defined( 'ABSPATH' ) || exit;
             <div class="col-12 col-sm-5 col-lg-3 f-col-2">
                 <h3>Members of</h3>
                 <?php
-                if(is_active_sidebar('footerwidget_member')){
-                    dynamic_sidebar('footerwidget_member');
+                if(is_active_sidebar('footerctawidget_members')){
+                    dynamic_sidebar('footerctawidget_members');
                 }
                 ?>
             </div>
